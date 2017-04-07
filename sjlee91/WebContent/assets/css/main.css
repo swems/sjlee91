@@ -3834,13 +3834,20 @@
 
 	#post {
 		background-position: center;
-		background-size: cover;
+		background-size: cover; /* -option- contain: 배경 이미지의 가로, 세로 길이 모두 엘리먼트 안에 들어온다라는 조건하에 가능한한 배경 이미지를 크게 조정함. 가로/세로 비율은 유지됨 
+											cover  : 가로, 세로 길이 모두 엘리먼트보다 크다라는 조건하에 가능한한 배경 이미지를 작게 조정함. 가로/세로 비율은 유지*/
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
 
+		/* */
 		#post .inner {
 			margin: 0 auto;
+		}
+
+		#post .intro {
+			margin: 0 auto;
+			width: 100%;
 		}
 
 		#post .button.icon {
